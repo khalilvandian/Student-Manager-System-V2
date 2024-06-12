@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="697.0" prefWidth="963.0" stylesheets="@../../../resorce/dark-theme.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox layoutX="14.0" layoutY="14.0" prefHeight="112.0" prefWidth="597.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="295.0" AnchorPane.topAnchor="14.0">
+         <children>
+            <FlowPane prefHeight="114.0" prefWidth="289.0" rowValignment="TOP" style="-fx-background-color: #1976D2;" styleClass="count-main">
+               <children>
+                  <FontAwesomeIconView glyphName="GRADUATION_CAP" opacity="0.3" size="90" wrappingWidth="115.0">
+                     <FlowPane.margin>
+                        <Insets left="8.0" top="10.0" />
+                     </FlowPane.margin>
+                  </FontAwesomeIconView>
+                  <VBox alignment="TOP_CENTER" prefHeight="107.0" prefWidth="151.0" style="-fx-background-color: #1976D2;">
+                     <children>
+                        <Label style="-fx-text-fill: #FFFF8D;" text="20" textFill="#e5ff00">
+                           <font>
+                              <Font name="FontAwesome" size="46.0" />
+                           </font>
+                           <padding>
+                              <Insets top="6.0" />
+                           </padding>
+                        </Label>
+                        <Label prefHeight="50.0" prefWidth="154.0" text="Student Count" textFill="WHITE">
+                           <font>
+                              <Font name="FontAwesome" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </FlowPane>
+            <FlowPane prefHeight="112.0" prefWidth="289.0" rowValignment="TOP" style="-fx-background-color: #1976D2;" styleClass="count-main">
+               <children>
+                  <FontAwesomeIconView glyphName="LEANPUB" opacity="0.3" size="90" wrappingWidth="107.0">
+                     <FlowPane.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </FlowPane.margin>
+                  </FontAwesomeIconView>
+                  <VBox alignment="TOP_CENTER" prefHeight="107.0" prefWidth="165.0" style="-fx-background-color: #1976D2;">
+                     <children>
+                        <Label style="-fx-text-fill: #FFFF8D;" text="18" textFill="WHITE">
+                           <font>
+                              <Font name="FontAwesome" size="46.0" />
+                           </font>
+                           <padding>
+                              <Insets top="6.0" />
+                           </padding>
+                        </Label>
+                        <Label prefHeight="50.0" prefWidth="165.0" text="Cource Count" textFill="WHITE">
+                           <font>
+                              <Font name="FontAwesome" size="26.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </FlowPane>
+         </children>
+      </HBox>
+   </children></AnchorPane>

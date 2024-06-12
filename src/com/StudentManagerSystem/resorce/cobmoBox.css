@@ -1,0 +1,7 @@
+
+.jfx-combo-box .cell:selected{
+    -fx-background-color: #263146; -fx-text-fill: WHITE;
+}
+.jfx-combo-box{
+    -fx-background-color: #ffffff;
+}

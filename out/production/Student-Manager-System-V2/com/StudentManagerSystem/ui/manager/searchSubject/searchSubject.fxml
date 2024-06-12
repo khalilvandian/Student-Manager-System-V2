@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  ~ designed by  "Amir Hosein Shekari"
+  -->
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="697.0" prefWidth="963.0" style="-fx-background-color: #2A2E37;" stylesheets="@../../../resorce/dark-theme.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.StudentManagerSystem.ui.manager.searchStudent.SearchStudent">
+   <children>
+      <VBox layoutX="219.0" layoutY="195.0" prefHeight="394.0" prefWidth="526.0" AnchorPane.bottomAnchor="108.0" AnchorPane.leftAnchor="219.0" AnchorPane.rightAnchor="218.0" AnchorPane.topAnchor="195.0">
+         <children>
+            <JFXTextField fx:id="name" disable="true" focusColor="#ffff8d" prefHeight="58.0" prefWidth="382.0" promptText="Title" style="-fx-font-size: 20; -fx-text-fill: #d9d9d9;" unFocusColor="WHITE">
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin></JFXTextField>
+            <JFXTextField fx:id="lastName" disable="true" focusColor="#ffff8d" prefHeight="58.0" prefWidth="382.0" promptText="Student Count" style="-fx-font-size: 20; -fx-text-fill: #d9d9d9;" unFocusColor="WHITE">
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin></JFXTextField>
+            <JFXTextField fx:id="ID" disable="true" focusColor="#ffff8d" prefHeight="58.0" prefWidth="382.0" promptText="Unit val" style="-fx-font-size: 20; -fx-text-fill: #d9d9d9;" unFocusColor="WHITE">
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin></JFXTextField>
+            <JFXDatePicker fx:id="birthDate" defaultColor="#ffff8d" disable="true" prefHeight="57.0" prefWidth="625.0" promptText="Test Date" showWeekNumbers="true" style="-fx-font-size: 20;" stylesheets="@../../../resorce/datapicker.css" VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin></JFXDatePicker>
+            <JFXTextField disable="true" focusColor="#ffff8d" prefHeight="58.0" prefWidth="382.0" promptText="-------" style="-fx-font-size: 20; -fx-text-fill: #d9d9d9;" unFocusColor="WHITE">
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin></JFXTextField>
+            <JFXTextField disable="true" focusColor="#ffff8d" prefHeight="58.0" prefWidth="382.0" promptText="-------" style="-fx-font-size: 20; -fx-text-fill: #d9d9d9;" unFocusColor="WHITE">
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin></JFXTextField>
+         </children>
+      </VBox>
+      <HBox alignment="TOP_CENTER" layoutX="219.0" layoutY="131.0" prefHeight="56.0" prefWidth="526.0" AnchorPane.leftAnchor="219.0" AnchorPane.rightAnchor="218.0" AnchorPane.topAnchor="131.0">
+         <children>
+            <JFXButton onAction="#AdvSearchHandler" prefHeight="56.0" prefWidth="176.0" style="-fx-font-size: 25;" styleClass="defult-Button" text="adv Search">
+               <HBox.margin>
+                  <Insets left="20.0" right="20.0" />
+               </HBox.margin>
+            </JFXButton>
+            <JFXButton onAction="#searchStudentHandler" prefHeight="56.0" prefWidth="176.0" style="-fx-font-size: 25;" styleClass="defult-Button" text="Search" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets left="20.0" right="20.0" />
+               </HBox.margin>
+            </JFXButton>
+         </children>
+      </HBox>
+      <JFXTextField fx:id="uniID" labelFloat="true" layoutX="280.0" layoutY="34.0" prefWidth="404.0" promptText="Subject ID" style="-fx-text-fill: #d9d9d9; -fx-font-size: 25;" styleClass="text-field-default" unFocusColor="WHITE" AnchorPane.leftAnchor="280.0" AnchorPane.rightAnchor="279.0" AnchorPane.topAnchor="34.0">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </JFXTextField>
+      <HBox alignment="TOP_CENTER" layoutX="280.0" layoutY="609.0" prefHeight="56.0" prefWidth="404.0" AnchorPane.bottomAnchor="32.0" AnchorPane.leftAnchor="280.0" AnchorPane.rightAnchor="279.0">
+         <children>
+            <JFXButton prefHeight="56.0" prefWidth="176.0" style="-fx-font-size: 25; -fx-text-fill: #e20000;" styleClass="defult-Button" text="Delete">
+               <HBox.margin>
+                  <Insets left="20.0" right="20.0" />
+               </HBox.margin>
+            </JFXButton>
+            <JFXButton prefHeight="56.0" prefWidth="176.0" style="-fx-font-size: 25;" styleClass="defult-Button" text="Edit">
+               <HBox.margin>
+                  <Insets left="20.0" right="20.0" />
+               </HBox.margin>
+            </JFXButton>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

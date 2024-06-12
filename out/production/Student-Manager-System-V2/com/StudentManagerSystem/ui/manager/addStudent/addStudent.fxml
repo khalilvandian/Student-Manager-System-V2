@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="697.0" prefWidth="963.0" style="-fx-background-color: #2A2E37;" stylesheets="@../../../resorce/dark-theme.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.StudentManagerSystem.ui.manager.addStudent.AddStudent">
+   <children>
+      <Label layoutX="371.0" layoutY="38.0" style="-fx-font-size: 40;" styleClass="main-text" text="Add Student" textFill="WHITE" AnchorPane.topAnchor="38.0" />
+      <VBox layoutX="206.0" layoutY="135.0" prefHeight="394.0" prefWidth="526.0" AnchorPane.leftAnchor="206.0" AnchorPane.rightAnchor="231.0" AnchorPane.topAnchor="135.0">
+         <children>
+            <JFXTextField fx:id="name" focusColor="#ffff8d" prefHeight="58.0" prefWidth="382.0" promptText="Name" style="-fx-font-size: 25; -fx-text-fill: #d9d9d9;" unFocusColor="WHITE">
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin></JFXTextField>
+            <JFXTextField fx:id="lastName" focusColor="#ffff8d" prefHeight="58.0" prefWidth="382.0" promptText="Last Name" style="-fx-font-size: 25; -fx-text-fill: #d9d9d9;" unFocusColor="WHITE">
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin></JFXTextField>
+            <JFXTextField fx:id="ID" focusColor="#ffff8d" prefHeight="58.0" prefWidth="382.0" promptText="ID" style="-fx-font-size: 25; -fx-text-fill: #d9d9d9;" unFocusColor="WHITE">
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin></JFXTextField>
+            <JFXDatePicker fx:id="birthDate" defaultColor="#ffff8d" prefHeight="57.0" prefWidth="625.0" promptText="BirthDate" showWeekNumbers="true" style="-fx-font-size: 20pt;" stylesheets="@../../../resorce/datapicker.css">
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin></JFXDatePicker>
+            <JFXTextField focusColor="#ffff8d" prefHeight="58.0" prefWidth="382.0" promptText="-------" style="-fx-font-size: 25; -fx-text-fill: #d9d9d9;" unFocusColor="WHITE">
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin></JFXTextField>
+            <JFXTextField focusColor="#ffff8d" prefHeight="58.0" prefWidth="382.0" promptText="-------" style="-fx-font-size: 25; -fx-text-fill: #d9d9d9;" unFocusColor="WHITE">
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin></JFXTextField>
+         </children>
+      </VBox>
+      <JFXButton layoutX="394.0" layoutY="593.0" onAction="#addStudentHandler" prefHeight="56.0" prefWidth="176.0" style="-fx-font-size: 25;" styleClass="defult-Button" text="Add Student" AnchorPane.bottomAnchor="48.0" />
+   </children>
+</AnchorPane>

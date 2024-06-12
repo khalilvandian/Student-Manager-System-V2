@@ -1,0 +1,28 @@
+
+.jfx-date-picker{
+    -jfx-default-color: #009688;
+}
+
+.jfx-date-picker .jfx-text-field{
+    -fx-text-fill: #d9d9d9;
+    /*-fx-text-fill: derive(#d9d9d9, 20%);*/
+    -jfx-unfocus-color: #ffffff;
+    -jfx-focus-color: #FFFF8D;
+}
+
+.jfx-date-picker > .arrow-button,
+.jfx-date-picker:editable > .arrow-button,
+.jfx-date-picker:focused > .arrow-button,
+.jfx-date-picker:editable:focused > .arrow-button {
+    -fx-background-color: TRANSPARENT;
+    -fx-padding: 1 8 1 8;
+}
+
+.jfx-date-picker > .arrow-button > .jfx-svg-glyph {
+    -fx-background-color:  #ffffff;
+}
+
+.jfx-date-picker:focused > .arrow-button > .jfx-svg-glyph {
+    -fx-background-color:  #FFFF8D;
+}
+

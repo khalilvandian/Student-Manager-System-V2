@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<!--
+  ~ designed by  "Amir Hosein Shekari"
+  -->
+
+<BorderPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="697.0" minWidth="1178.0" prefHeight="697.0" prefWidth="1178.0" stylesheets="@../../../resorce/dark-theme.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.StudentManagerSystem.ui.manager.main.MainApp">
+   <left>
+      <AnchorPane prefHeight="584.0" prefWidth="272.0" style="-fx-background-color: #005792;" BorderPane.alignment="CENTER">
+         <children>
+            <JFXButton contentDisplay="TOP" layoutX="-1.0" onAction="#homeButtonHandler" prefHeight="154.0" prefWidth="272.0" style="-fx-font-size: 20;" styleClass="main-button" text="Manager Name" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <graphic>
+                  <ImageView fitHeight="94.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../resorce/avatar-372-456324.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <Separator layoutY="152.0" prefHeight="6.0" prefWidth="272.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+            <VBox layoutX="14.0" layoutY="158.0" prefHeight="540.0" prefWidth="272.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="156.0">
+               <children>
+                  <JFXButton alignment="CENTER" contentDisplay="TOP" graphicTextGap="8.0" onAction="#addStudentButtonHandler" prefHeight="31.0" prefWidth="272.0" style="-fx-font-size: 18;" text="Course Manage" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="USER_PLUS" size="30" />
+                     </graphic>
+                     <styleClass>
+                        <String fx:value="main-text" />
+                        <String fx:value="main-button" />
+                     </styleClass>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </JFXButton>
+                  <JFXButton alignment="CENTER" contentDisplay="TOP" graphicTextGap="8.0" onAction="#searchStudentButtonHandler" prefHeight="50.0" prefWidth="272.0" style="-fx-font-size: 18;" text="Score" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="USER" size="30" wrappingWidth="21.428571701049805" />
+                     </graphic>
+                     <styleClass>
+                        <String fx:value="main-text" />
+                        <String fx:value="main-button" />
+                     </styleClass>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </JFXButton>
+                  <JFXButton alignment="CENTER" contentDisplay="TOP" graphicTextGap="8.0" onAction="#addEmployeeButtonHandler" prefHeight="31.0" prefWidth="272.0" style="-fx-font-size: 18;" text="Info" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="USER_PLUS" size="30" />
+                     </graphic>
+                     <styleClass>
+                        <String fx:value="main-text" />
+                        <String fx:value="main-button" />
+                     </styleClass>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </JFXButton>
+               </children>
+            </VBox>
+         </children>
+         <effect>
+            <DropShadow radius="11.555" width="27.22" />
+         </effect>
+      </AnchorPane>
+   </left>
+</BorderPane>
